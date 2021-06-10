@@ -2,7 +2,7 @@
 
 I started this project because I needed an expression parser that could generate an expression tree from not only single line, but also multiline C# code. The expression parsers found on NuGet where not sufficient to fullfill my needs (except for `CSharpScript`, but that one generates an assembly which is loaded into memory and never gets unloaded) 
 
-So I took a deep dive into Roslyn and with a lot of debugging and sparse documentation I gpt enough basis to get started. This project is the result of these efforts.
+So I took a deep dive into Roslyn and with a lot of debugging and sparse documentation I got enough basis to get started. This project is the result of these efforts.
 
 # What's included?
 
@@ -43,11 +43,11 @@ The following language features won't be supported at all:
 
 ## So how about async/await?
 
-That's a totally different cookie to crack. Async/await is currently not supported by the `Expression` class, although there is a library that has at least support for an 'await' expression and I'm looking into this to support at least some basic functionality
+That's a totally different cookie to crack. Async/await is currently not supported by the `Expression` class, although there is a library that has support for an 'await' expression and I'm looking into this to support at least some basic functionality
 
 ## LINQ expressions
 
-To be able to use the expression parts to generate LINQ expressions and using them in for example as a filter, you're just as limited in your toolset as the C# editor subscribes. Which means: single line only, no control flow statements and no methods that returns a `ref` or `out` parameter.
+To be able to use the expression parts to generate LINQ expressions and using them for example as a 'where' predicate, you're just as limited in your toolset as the C# editor subscribes. Which means: single line only, no control flow statements and no methods that returns a `ref` or `out` parameter.
 
 Correct:
 ```csharp
