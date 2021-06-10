@@ -32,6 +32,7 @@ The following language features are fully supported:
 * with
 * using
 * checked
+* throw
 
 The following language features are not (yet) supported:
 * pattern expressions
@@ -39,7 +40,8 @@ The following language features are not (yet) supported:
 * anonymous types (e.g. `() => new { Foo = "Bar" }`)
 
 The following language features won't be supported at all:
-* unsafe and it's operations
+* fixed (and it's operations)
+* unsafe (and it's operations)
 * `ref` locals (e.g. `return ref` or `readonly ref`)
 
 ## So how about async/await?
