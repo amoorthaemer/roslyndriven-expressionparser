@@ -46,12 +46,15 @@ To be able to use the expression parts to generate LINQ expressions and using th
 
 Correct:
 ```csharp
-  customer => customer.Name == "John"
+customer => customer.Name == "John"
 ``` 
   
-Invalid: `customer => {
-  return customer.Name == "John";
-}`
+Invalid:
+```csharp
+customer => {
+    return customer.Name == "John";
+}
+```
 
 # Documentation
 
