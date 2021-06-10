@@ -29,6 +29,7 @@ The following language features are fully supported:
 * typeof, nameof, sizeof
 * new
 * with
+* using
 * checked
 
 The following language features are not (yet) supported:
