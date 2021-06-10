@@ -8,7 +8,9 @@ So I took a deep dive into Roslyn and with a lot of debugging and sparse documen
 
 In essence the parser can handle any C# code that leads to a lambda function (e.g. an `Expression<TDelegate>`, where `TDelegate` is either a `Func<...>`, an `Action` or an `Action<...>`). Which automatically excludes any class/record/struct/interface declaration and it's containing code. If you need such functionality use Roslyn itself to handle that for you.
 
-Also the parser is based on C# language version 9, so you have all of the nifty C# syntactic sugar at your disposal. **NOTE: pattern expressions are not (yet) supported.**
+Also the parser is based on C# language version 9, so you have all of the nifty C# syntactic sugar at your disposal.
+
+**NOTE: pattern expressions are not (yet) supported.**
 
 ## So how about async/await?
 
