@@ -35,7 +35,10 @@ The following language features are not (yet) supported:
 * pattern expressions
 * dynamics 
 * anonymous types (e.g. `() => new { Foo = "Bar" }`)
-* unsafe operations (e.g. pointers, `ref` locals (e.g. `return ref` or `readonly ref`)
+* `ref` locals (e.g. `return ref` or `readonly ref`)
+
+The following language features won't be supported at all:
+* unsafe and it's operations
 
 
 ## So how about async/await?
