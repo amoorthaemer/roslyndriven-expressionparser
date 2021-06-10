@@ -10,6 +10,8 @@ In essence the parser can handle any C# code that leads to a lambda function (e.
 
 ## Supported features
 
+(NOTE: The parser is based on C# language version 9, so you have most of the nifty C# syntactic sugar at your disposal)
+
 The following language features are fully supported:
 * block syntax ({...})
 * return <value>
@@ -28,8 +30,6 @@ The following language features are fully supported:
 * new
 * with
 * checked
-
-NOTE: The parser is based on C# language version 9, so you have most of the nifty C# syntactic sugar at your disposal.
 
 The following language features are not (yet) supported
 * pattern expressions
