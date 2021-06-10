@@ -27,10 +27,14 @@ The following language features are fully supported:
 * typeof, nameof, sizeof
 * new
 * with
+* checked
 
-Also the parser is based on C# language version 9, so you have all of the nifty C# syntactic sugar at your disposal.
+NOTE: The parser is based on C# language version 9, so you have most of the nifty C# syntactic sugar at your disposal.
 
-**NOTE: pattern expressions and pointer operations are not (yet) supported.**
+The following language features are not (yet) supported
+* pattern expressions
+* unsafe operations (e.g. pointers, `ref` locals (e.g. `return ref` or `readonly ref`)
+
 
 ## So how about async/await?
 
