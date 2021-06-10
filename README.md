@@ -14,12 +14,13 @@ In essence the parser can handle any C# code that leads to a lambda function (e.
 
 The following language features are fully supported:
 * block syntax ({...})
-* return <value>
+* return
 * if/else
 * while
 * do/while
 * for
 * foreach
+* break/continue/goto
 * switch/case/default
 * try/catch
 * try/finally
@@ -34,13 +35,12 @@ The following language features are fully supported:
 
 The following language features are not (yet) supported:
 * pattern expressions
-* dynamics 
+* dynamic
 * anonymous types (e.g. `() => new { Foo = "Bar" }`)
-* `ref` locals (e.g. `return ref` or `readonly ref`)
 
 The following language features won't be supported at all:
 * unsafe and it's operations
-
+* `ref` locals (e.g. `return ref` or `readonly ref`)
 
 ## So how about async/await?
 
