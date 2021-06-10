@@ -48,7 +48,7 @@ That's a totally different cookie to crack. Async/await is currently not support
 
 ## LINQ expressions
 
-To be able to use the expression parts to generate LINQ expressions and using them for example as a 'where' predicate, you're just as limited in your toolset as the C# editor subscribes. Which means: single line only, no control flow statements and no methods that returns a `ref` or `out` parameter.
+To be able to use the expression parts to generate LINQ expressions and using them for example as a 'where' predicate, you're just as limited in your toolset as the C# editor subscribes. Which means: single line only, no control flow statements and no methods that return a `ref` or `out` parameter(s).
 
 Correct:
 ```csharp
