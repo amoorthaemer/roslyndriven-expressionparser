@@ -31,8 +31,10 @@ The following language features are fully supported:
 * with
 * checked
 
-The following language features are not (yet) supported
+The following language features are not (yet) supported:
 * pattern expressions
+* dynamics 
+* anonymous types (e.g. `() => new { Foo = "Bar" }`)
 * unsafe operations (e.g. pointers, `ref` locals (e.g. `return ref` or `readonly ref`)
 
 
