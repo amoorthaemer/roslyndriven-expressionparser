@@ -22,7 +22,7 @@ The following language features are fully supported:
 * foreach
 * if/else
 * inline lambda functions  (e.g. `var f = () => { ... }`)
-* is, as
+* is, as (including: `someVar is SomeType someType`)
 * local functions
 * lock
 * new
