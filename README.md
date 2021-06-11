@@ -6,7 +6,7 @@ So I took a deep dive into Roslyn and with a lot of debugging and sparse documen
 
 # What's included?
 
-In essence the parser can handle any C# code that leads to a lambda function (e.g. an `Expression<TDelegate>`, where `TDelegate` is either a `Func<...>`, an `Action` or an `Action<...>`). Which automatically excludes any class/record/struct/interface declaration and it's containing code. If you need such functionality use Roslyn itself to handle that for you.
+In essence the parser can handle any C# code that leads to a lambda function (e.g. an `Expression<TDelegate>`, where `TDelegate` is either a `Func<...>`, an `Action` or an `Action<...>`). Which automatically excludes any namespace/class/record/struct/interface declaration and it's containing code. If you need such functionality use Roslyn itself to handle that for you.
 
 ## Supported features
 
