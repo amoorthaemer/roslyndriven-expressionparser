@@ -1,6 +1,6 @@
 # Roslyn Driven Expression Parser
 
-I started this project because I needed an expression parser that could generate an expression tree from not only single line, but also multiline C# code. The expression parsers found on NuGet where not sufficient to fullfill my needs (except for `CSharpScript`, but that one generates an assembly which is loaded into memory and never gets unloaded) 
+I started this project because I needed an expression parser that could generate an expression tree from not only single line, but also multiline C# code. The expression parsers found on NuGet where not sufficient to fullfill my needs, except for `CSharpScript`, but that one generates an assembly which is loaded into memory and never gets unloaded (which can lead to memory exhaustion)
 
 So I took a deep dive into Roslyn and with a lot of debugging and sparse documentation I got enough basis to get started. This project is the result of these efforts.
 
