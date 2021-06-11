@@ -40,7 +40,9 @@ The following language features are fully supported:
 * with
 
 The following language features are not (yet) supported:
+* destructuring
 * dynamic
+* indices/ranges 
 * inline LINQ
 * pattern expressions
 * yield
