@@ -14,33 +14,43 @@ In essence the parser can handle any C# code that leads to a lambda function (e.
 
 The following language features are fully supported:
 * block syntax ({...})
-* return
-* if/else
-* while
+* break/continue/goto
+* checked/unchecked
+* const
 * do/while
 * for
 * foreach
-* break/continue/goto
-* switch/case/default
-* try/catch
-* try/finally
-* try/catch/finally
-* local functions
+* if/else
 * inline lambda functions  (e.g. `var f = () => { ... }`)
-* typeof, nameof, sizeof
+* is, as
+* local functions
+* lock
 * new
-* with
-* using
-* checked
+* ref/in/out (currently only on function calls)
+* return
+* switch/case/default
 * throw
+* try/catch
+* try/catch/finally
+* try/finally
+* typeof, nameof, sizeof
+* using
+* var
+* while
+* with
 
 The following language features are not (yet) supported:
 * pattern expressions
 * dynamic
 * anonymous types (e.g. `() => new { Foo = "Bar" }`)
+* inline LINQ
+* yield
 
 The following language features won't be supported at all:
 * fixed (and it's operations)
+* static
+* this
+* volatile
 * unsafe (and it's operations)
 * `ref` locals (e.g. `return ref` or `readonly ref`)
 
