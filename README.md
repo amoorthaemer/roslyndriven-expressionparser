@@ -45,7 +45,7 @@ The following language features are not (yet) supported:
 * indices/ranges 
 * inline LINQ
 * pattern expressions
-* yield
+* yield return/break
 
 The following language features won't be supported at all:
 * fixed (and it's operations)
