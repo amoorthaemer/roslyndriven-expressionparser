@@ -6,7 +6,7 @@ So I took a deep dive into Roslyn and with a lot of debugging and sparse documen
 
 # What's included?
 
-In essence the parser can handle any C# code that leads to a lambda function (e.g. an `Expression<TDelegate>`, where `TDelegate` is either a `Func<...>`, an `Action` or an `Action<...>`). Which automatically excludes any namespace/class/record/struct/interface declaration and it's containing code. If you need such functionality use Roslyn itself to handle that for you.
+In essence the parser can handle any C# code that leads to a lambda function (e.g. an `Expression<TDelegate>`, where `TDelegate` is either a `Func<...>`, an `Action` or an `Action<...>`). Which automatically excludes any namespace/class/record/struct/enum/interface declaration and it's containing code. If you need such functionality use Roslyn itself to handle that for you.
 
 ## Supported features
 
@@ -25,7 +25,7 @@ The following language features are fully supported:
 * is, as (including: `someVar is SomeType someType`)
 * local functions
 * lock
-* new
+* new (including: anonymous types, e.g. `() => new { Foo = "Bar" }`)
 * ref/in/out (currently only on function calls)
 * return
 * switch/case/default
@@ -40,19 +40,18 @@ The following language features are fully supported:
 * with
 
 The following language features are not (yet) supported:
-* pattern expressions
 * dynamic
-* anonymous types (e.g. `() => new { Foo = "Bar" }`)
 * inline LINQ
+* pattern expressions
 * yield
 
 The following language features won't be supported at all:
 * fixed (and it's operations)
 * static
+* `ref` locals (e.g. `return ref` or `readonly ref`)
 * this
 * volatile
 * unsafe (and it's operations)
-* `ref` locals (e.g. `return ref` or `readonly ref`)
 
 ## So how about async/await?
 
