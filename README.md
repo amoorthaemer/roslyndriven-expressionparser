@@ -45,16 +45,17 @@ The following language features are not (yet) supported:
 * indices/ranges 
 * inline LINQ
 * pattern expressions
-* yield return/break
+
 
 The following language features won't be supported at all:
 * fixed (and it's operations)
-* static
 * `ref` locals (e.g. `return ref` or `readonly ref`)
+* static
 * this
-* volatile
 * unsafe (and it's operations)
-
+* volatile
+* yield return/break
+ 
 ## So how about async/await?
 
 That's a totally different cookie to crack. Async/await is currently not supported by the `Expression` class, although there is a library that has support for an 'await' expression and I'm looking into this to support at least some basic functionality
