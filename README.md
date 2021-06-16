@@ -17,6 +17,7 @@ The following language features are fully supported:
 * break/continue/goto
 * checked/unchecked
 * const
+* default, default(SomeType)
 * do/while
 * for
 * foreach
@@ -28,6 +29,7 @@ The following language features are fully supported:
 * new (including: anonymous types, e.g. `() => new { Foo = "Bar" }`)
 * ref/in/out (currently only on function calls)
 * return
+* string interpolation
 * switch/case/default
 * throw
 * try/catch
