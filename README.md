@@ -52,6 +52,7 @@ The following language features are not (yet) supported:
 The following language features won't be supported at all:
 * fixed (and it's operations)
 * `ref` locals (e.g. `return ref` or `readonly ref`)
+* sizeof (because it requires an 'unsafe' context)
 * static
 * this
 * unsafe (and it's operations)
