@@ -35,7 +35,7 @@ The following language features are fully supported:
 * try/catch
 * try/catch/finally
 * try/finally
-* typeof, nameof, sizeof
+* typeof, nameof
 * using
 * var
 * while
