@@ -14,7 +14,7 @@ In essence the parser can handle any C# code that leads to a lambda function (e.
 
 The following language features are fully supported:
 * block syntax ({...})
-* break/continue/goto
+* break/continue
 * checked/unchecked
 * const
 * default, default(SomeType)
@@ -30,7 +30,6 @@ The following language features are fully supported:
 * ref/in/out (currently only on function calls)
 * return
 * string interpolation
-* switch/case/default
 * throw
 * try/catch
 * try/catch/finally
@@ -44,10 +43,11 @@ The following language features are fully supported:
 The following language features are not (yet) supported:
 * destructuring
 * dynamic
+* goto
 * indices/ranges 
 * inline LINQ
 * pattern expressions
-
+* switch/case/default
 
 The following language features won't be supported at all:
 * fixed (and it's operations)
