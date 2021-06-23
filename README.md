@@ -22,7 +22,8 @@ The following language features are fully supported:
 * for
 * foreach
 * if/else
-* inline lambda functions  (e.g. `var f = () => { ... }`)
+* inline lambda functions (e.g. `Func<int> f = () => -1`)
+* inline lambda expressions (e.g. `Expression<Func<bool>> expr = () => false`)
 * is, as (including: `someVar is SomeType someType`)
 * local functions
 * lock
