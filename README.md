@@ -56,6 +56,7 @@ The following language features won't be supported at all:
 * sizeof (because it requires an 'unsafe' context)
 * static
 * this
+* tuples
 * unsafe (and it's operations)
 * volatile
 * yield return/break
