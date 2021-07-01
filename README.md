@@ -36,7 +36,7 @@ The following language features are fully supported:
 * try/catch/finally
 * try/finally
 * typeof, nameof
-* using
+* using (e.g `using (var x = new SomeDisposable()) {...}` and `using var x = new SomeDisposable();`)
 * var
 * while
 * with
